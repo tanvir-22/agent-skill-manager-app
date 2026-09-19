@@ -14,24 +14,21 @@ const Createpage = () => {
   return (
     <form
       action={formAction}
-      className="mx-auto mt-10  w-full max-w-2xl space-y-5 rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6 md:p-8"
+      className="mx-auto mt-10  w-full max-w-2xl space-y-5 rounded-xl border   border-gray-500 bg-base-100 p-5 shadow-sm sm:p-6 md:p-8"
     >
       <div>
-        <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
+        <h2 className="text-xl font-semibold text-white sm:text-2xl">
           Create Skill
         </h2>
 
-        <p className="mt-1 text-sm text-gray-500">
+        <p className="mt-1 text-sm text-white">
           Add a new skill to your collection.
         </p>
       </div>
 
       {/* Name */}
       <div className="space-y-2">
-        <label
-          htmlFor="name"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="name" className="block text-sm font-medium text-white">
           Skill name
         </label>
 
@@ -40,7 +37,7 @@ const Createpage = () => {
           name="name"
           type="text"
           placeholder="e.g. React Development"
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
         />
       </div>
 
@@ -48,7 +45,7 @@ const Createpage = () => {
       <div className="space-y-2">
         <label
           htmlFor="description"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-sm font-medium text-white"
         >
           Description
         </label>
@@ -58,7 +55,7 @@ const Createpage = () => {
           name="description"
           rows={5}
           placeholder="Describe what this skill does..."
-          className="w-full resize-y rounded-lg border border-gray-300 px-4 py-2.5 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+          className="w-full resize-y rounded-lg border border-gray-300 px-4 py-2.5 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
         />
       </div>
 
@@ -66,7 +63,7 @@ const Createpage = () => {
       <div className="space-y-2">
         <label
           htmlFor="category"
-          className="block text-sm font-medium text-gray-700"
+          className="block text-sm font-medium text-white"
         >
           Category
         </label>
@@ -76,7 +73,7 @@ const Createpage = () => {
           name="category"
           type="text"
           placeholder="e.g. Programming"
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
         />
       </div>
 
@@ -84,7 +81,7 @@ const Createpage = () => {
       <button
         type="submit"
         disabled={pending}
-        className="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-400"
+        className="w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-400"
       >
         {pending ? "Creating..." : "Create Skill"}
       </button>

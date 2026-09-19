@@ -27,8 +27,11 @@ export let skills: Skills[] = [
 ];
 
 export async function getSkills() {
+  // throw new Error("i am from getSkills")
+  await new Promise((resolve)=>setTimeout(resolve,3000))
   return [...skills];
 }
 export async function addSkills(skill: Skills) {
+  
   skills = [skill, ...skills];
 }
